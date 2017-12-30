@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> These are the lists of the hostels</h1>
+
+   {% for jpt in object_list %}
+
+        <h3><a href="/hostel_detail/{{jpt.id}}">{{jpt.name}}</a></h3>
+        <p>
+        {{jpt.id}}<br>
+        {{jpt.location}}<br>
+        {{jpt.gender}}<br>
+        <!--{{jpt.phone_number}}<br>-->
+        <!--{{jpt.facilities}}<br>-->
+        <!--{{jpt.admission_fee}}<br>-->
+        <!--{{jpt.owner}}<br>-->
+        <!--{{jpt.rating}}<br>-->
+        <!--{{jpt.email}}<br>-->
+        <br>
+        </p>
+    {%endfor%}
+</body>
+</html>
