@@ -1,0 +1,301 @@
+<!------------------- From Bootstrap -------------------------------------->\
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Sajilo Hostel</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+<!--------------------NAVIGATION----------------------------->
+      
+   
+    <div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type = "button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>  
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    
+                </button>
+                
+                <a href="#" class="navbar-brand">Sajilo Hostel</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#Featured_Hostels">Featured Hostels</a></li>
+                    <li><a href="#search">Search</a></li>
+
+                    <li><a href="#team">Team</a></li>
+<!--                    <li><a href="#client">Clients</a></li>-->
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+  
+ <!------------------------ End Navigation --------------------------->
+      
+<!------------------------- Header ------------------------------------>
+      
+      <div id="header" class="header">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 wow bounceInLeft" data-wow-delay="0.3s">
+                      <h1>Find your best Hostel anywhere !</h1>
+                      <p>First startup in digitalizing all the hostels database along with the dttails to follow on the web.You are welcome t o the free complete listings of all hostels in Nepal based on quick searching. </p>
+                      <button class="btn btn-md btn-primary">Contact us</button>
+                      <button class="btn btn-md btn-success"><a href="#search">Search</a></button>
+                  </div>
+                  <div class="col-lg-6 col-md-6 wow bounceInRight" data-wow-delay="0.8s" >
+                      <img src="images/searching.png" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+   
+   <!-------------------------- End Header --------------------------->
+      
+<!---------------------------      searching the hostel---------------------->
+      <form method="GET" action="{% url 'searchlist' %}">
+      <div id="search" class="search">
+          <div class="container">
+              <div class="row">
+                  <h2 class="wow fadeInUp">Search Hostel</h2>
+                  <p class="wow fadeInUp" data-wow-delay="0.4s">Search your hostel here</p>
+                  
+                  <div class="col-lg-2 col-md-2" ></div>
+                  
+                  <div class="col-lg-2 col-md-2 wow bounceInLeft" data-wow-delay="0.3s">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-user" aria hidden="true"></i></span>
+                          <input type="text" name="q1" class="form-control" aria-describeby="sizing-addon1" placeholder="Gender">
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="col-lg-4 col-md-4 wow bounceInLeft" data-wow-delay="0.3s">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.2s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                          <input type="text" name="q2" class="form-control" aria-describeby="sizing-addon1" placeholder="Location">
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-2 col-md-2 wow bounceInRight" data-wow-delay="0.8s" >
+                      <button class="btn btn-lg wow fadeInUp" data-wow-delay="2.4s" type="submit">Search</button>
+                  </div>
+            
+              
+              
+              
+              </div>
+          </div>
+      </div>
+      
+      
+      
+      
+      
+      </form>
+      
+<!---------------------------      End of searching the hostel---------------------->
+      
+    <!------------------------- Featured hostel ------------------------------->
+     
+     <div id="Featured_Hostels" class="services">
+         <div class="container">
+             <h2 class="wow fadeInUp">Featured Hostels</h2>
+             <p class="wow fadeInUp" data-wow-delay="0.4s">Check out the best rated Hostels here</p>
+             <div class="row">
+                 <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.8s">
+<!--                     <i class="fa fa-desktop" aria-hidden="true"></i>-->
+                     <img src="images/ddd.jpg" class="img-circle featured_img" alt="">
+                     <h4>Sanima Girls Hostel</h4>
+                     <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
+                 </div>
+                 <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.4s">
+<!--                     <i class="fa fa-mobile" aria-hidden="true"></i>-->
+                     <img src="images/ddd.jpg" class="img-circle featured_img" alt="">
+                     <h4>Grand Boys Hostel</h4>
+                     <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
+                 </div>
+                 <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
+<!--                     <i class="fa fa-database" aria-hidden="true"></i>-->
+                     <img src="images/ddd.jpg" class="img-circle featured_img" alt="">
+                     <h4>Miniland Boys Hostel</h4>
+                     <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
+                 </div>
+                 <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
+<!--                     <i class="fa fa-university" aria-hidden="true"></i>-->
+                    <img src="images/ddd.jpg" class="img-circle featured_img" alt="">
+                     <h4>Dharan Girls Hostel</h4>
+                     <p>Lorem Ipsum passages, and more recently with desktop publishing software</p>
+                 </div>
+             </div>
+         </div>
+     </div> 
+     
+     <!------------------- End Services------------------------------>
+      
+      <!---------------------Team------------------------------------>
+      
+      <div id="team" class="team">
+          <div class="container">
+              <div class="row">
+                  <h2 class="wow fadeInUp">Meet our team</h2>
+                  <p class="wow fadeInUp" data-wow-delay="0.4s">We are the Passionate Developers of Sajilo Hostel</p>
+                  <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="2s">
+                      <img src="images/team/ashwin.jpg" class="img-circle" alt="">
+                      <h4>Ashwin</h4>
+                      <b>Backend Developer</b>
+                      <p>He spends most of the time working on the backend of data analysis.</p>
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.6s">
+                      <img src="images/team/buddha.JPG" class="img-circle" alt="">
+                      <h4>Buddha</h4>
+                      <b>Database </b>
+                      <p> He believes “The more you observe things, the more you learn.”</p>
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.2s">
+                     <img src="images/team/sushant.JPG" class="img-circle" alt="">
+                      <h4>Sushant</h4>
+                      <b>Frontend Development</b>
+                      <p>He wants to contribute to the growing tech industry in Nepal. </p>
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
+                      <img src="images/team/dhiraj.jpg" class="img-circle" alt="">
+                      <h4>Dhiraj</h4>
+                      <b>Frontend Development</b>
+                      <p>He is a core member of Creative Desing Team at Sajilo Hostel.</p>
+                      <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                      <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!---END TEAM--->
+      
+
+      <!---Contacts--->
+      
+      <div id="contact" class="contact">
+          <div class="container">
+              <div class="row">
+                  <h2 class="wow fadeInUp">Contact</h2>
+                  <p class="wow fadeInUp" data-wow-delay="0.4s">Feel free to contact us any time . We will be glad to hera from you ! !</p>
+                  <div class="col-lg-6 col-md-6">
+                      <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-user" aria hidden="true"></i></span>
+                          <input type="text" class="form-control" aria-describeby="sizing-addon1" placeholder="Full Name">
+                      </div>
+                      <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.2s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-envelope" aria hidden="true"></i></span>
+                          <input type="text" class="form-control" aria-describeby="sizing-addon1" placeholder="Email-Address">
+                      </div>
+                      <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.6s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-phone" aria hidden="true"></i></span>
+                          <input type="text" class="form-control" aria-describeby="sizing-addon1" placeholder="Phone Number">
+                      </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                      <div class="input-group wow fadeInUp" data-wow-delay="2s">
+                          <textarea name="" id="" cols="80" rows="7" class="form-control"></textarea>
+                      </div>
+                      <button class="btn btn-lg wow fadeInUp" data-wow-delay="2.4s">Submit Your Message</button>
+                  </div>
+              </div>
+           </div>
+      </div>
+              
+              <!---End Contact--->
+              
+              <!---Footer--->
+              
+              <div id="footer" class="footer">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-lg-4 col-md-4">
+                              <h4 class="wow fadeInUp">Contact Us</h4>
+                              <p><i class="fa fa-home" aria hidden="true"></i>  Lamachaur-16,Pokhara,33700</p>
+                              <p><i class="fa fa-envelope" aria hidden="true"></i>  hello@sajilohostel.com</p>
+                              <p><i class="fa fa-phone" aria hidden="true"></i>  9843696211</p>
+                              <p><i class="fa fa-globe" aria hidden="true"></i>  www.sajilohostel.com</p>
+                          </div>
+                          <div class="col-lg-4 col-md-4">
+                              <h4 class="wow fadeInUp">About</h4>
+                              <p><i class="fa fa-thumb-tack" aria-hidden="true"></i> About Us</p>
+                              <p><i class="fa fa-thumb-tack" aria-hidden="true"></i> Privacy</p>
+                              <p><i class="fa fa-thumb-tack" aria-hidden="true"></i> Terms & Conditions</p>
+                          </div>
+                          <div class="col-lg-4 col-md-4">
+                              <h4 class="wow fadeInUp">Stay In Touch</h4>
+                              <i class="social fa fa-facebook " aria hidden="true"></i>
+                              <i class="social fa fa-twitter " aria hidden="true"></i>
+                              <i class="social fa fa-linkedin " aria hidden="true"></i>
+                              <i class="social fa fa-pinterest " aria hidden="true"></i>
+                              <i class="social fa fa-youtube " aria hidden="true"></i>
+                              <i class="social fa fa-github " aria hidden="true"></i><br>
+                              <input type="email" placeholder="Subscribe For Updates"><button class="btn btn-success">Subscribe</button>
+                           </div>
+                      </div>
+                  </div>
+              </div>
+     
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<!-- -------------     this is for the animation-->
+      <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+<!-------------ed animation------------------->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
